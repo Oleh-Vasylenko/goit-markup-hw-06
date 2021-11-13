@@ -55,12 +55,48 @@
     <section class="section no-padding">
       <!-- Modals -->
       <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-          <button class="close-modal-button" type="button" data-modal-close>
-            <svg class="icon-close-black-18dp" width="30" height="30">
-              <use href="./images/svg/icons.svg#icon-close-black-18dp"></use>
-            </svg>
-          </button>
+        <div class="modal-window">
+          <h1 class="modal-window__heading">Оставьте свои данные, мы вам перезвоним</h1>
+          <form class="form" name="form">
+            <label class="form__wrapper">
+              <span class="form__label">Имя</span>
+              <input class="form__input" name="username" type="text" required />
+              <svg class="form__icon">
+                <use href="./images/svg/icons.svg#icon-person-black-18dp"></use>
+              </svg></label>
+            <label class="form__wrapper">
+              <span class="form__label">Телефон</span>
+              <input class="form__input" name="user-telephone" type="tel" required />
+              <svg class="form__icon">
+                <use href="./images/svg/icons.svg#icon-phone-black-18dp"></use>
+              </svg></label>
+            <label class="form__wrapper">
+              <span class="form__label">Почта</span>
+              <input class="form__input" name="user-email" type="email" required />
+              <svg class="form__icon">
+                <use href="./images/svg/icons.svg#icon-email-black-18dp "></use>
+              </svg></label>
+            <label class="form__wrapper textarea">
+              <span class="form__label">Комментарий</span>
+              <textarea class="form__comment" name="form__comment" placeholder="Введите текст"></textarea>
+            </label>
+            <label class="form__label user-agreement">
+              <input class="form__default-checkbox visually-hidden" type="checkbox" name="user-agreement"
+                value="Соглашаюсь с рассылкой и принимаю Условия договора" required />
+              <svg class="form__checkbox" width="16" height="15">
+                <use href="./images/svg/icons.svg#icon-check"></use>
+              </svg>Соглашаюсь с рассылкой и принимаю
+              <a class="form__link" href="">Условия договора</a>
+            </label>
+            <button class="hero button hero__button" type="submit">Отправить</button>
+          </form>
+          <div>
+            <button class="btn-close" type="button" data-modal-close>
+              <svg class="btn-close__icon" width="30" height="30">
+                <use href="./images/svg/icons.svg#icon-close-black-18dp"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
       <div class="hero hero-overlay">
